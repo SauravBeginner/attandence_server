@@ -1,18 +1,19 @@
 const mongoose = require("mongoose");
 
 const StudentSchema = mongoose.Schema({
-  sName: {
-    type: String,
-    required: true,
-  },
   sCode: {
     type: String,
     required: true,
     unique: true,
   },
+  sName: {
+    type: String,
+    required: true,
+  },
   smail: {
     type: String,
     required: true,
+    unique: true,
   },
   spassword: {
     type: String,
